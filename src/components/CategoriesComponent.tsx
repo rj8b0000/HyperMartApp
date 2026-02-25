@@ -14,6 +14,18 @@ const CategoriesComponent = () => {
   }, []);
   const categories = getCategories(t);
   const bgColors = [Colors.primary, Colors.blue, Colors.magenta, Colors.purple];
+  const renderCategories = (item: any) => {
+    const backgroundColor = bgColors[item.index % bgColors.length];
+
+    return (
+      <View style={[styles.item, { backgroundColor: backgroundColor }]}>
+        <item.item.icon width={35} height={35} style={styles.icon} />
+        <Text style={[Typography.dmSmall, styles.itemText]}>
+          {item.item.title}
+        </Text>
+      </View>
+    );
+  };
   return (
     <View>
       <SectionHeader title={t('categories')} showIcon={true} />
@@ -24,18 +36,7 @@ const CategoriesComponent = () => {
           horizontal
           style={styles.list}
           showsHorizontalScrollIndicator={false}
-          renderItem={item => {
-            const backgroundColor = bgColors[item.index % bgColors.length];
-
-            return (
-              <View style={[styles.item, { backgroundColor: backgroundColor }]}>
-                <item.item.icon width={35} height={35} style={styles.icon} />
-                <Text style={[Typography.dmSmall, styles.itemText]}>
-                  {item.item.title}
-                </Text>
-              </View>
-            );
-          }}
+          renderItem={item => renderCategories(item)}
         />
       </View>
     </View>

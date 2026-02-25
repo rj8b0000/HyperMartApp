@@ -15,6 +15,7 @@ import Slider from '../components/SliderComponent';
 import CategoriesComponent from '../components/CategoriesComponent';
 import PreviousOrderComponent from '../components/PreviousOrderComponent';
 import { ScrollView } from 'react-native-gesture-handler';
+import PopularDealsComponent from '../components/PopularDealsComponent';
 
 const HomeScreen = () => {
   const { t } = useTranslation();
@@ -54,6 +55,15 @@ const HomeScreen = () => {
             }}
           >
             <PreviousOrderComponent />
+          </View>
+          <View
+            style={{
+              width: '88%',
+              alignSelf: 'center',
+              marginTop: Spacing.xl,
+            }}
+          >
+            <PopularDealsComponent />
           </View>
         </ScrollView>
       </SafeAreaView>

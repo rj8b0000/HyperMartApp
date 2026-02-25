@@ -26,7 +26,9 @@ export const Typography = {
   offerTxt: makeTextStyle(FontFamily.dmSansBold, 10, 12),
   categoryHeader: makeTextStyle(FontFamily.dmSansBold, 16, 20),
   moreProducts: makeTextStyle(FontFamily.dmSansMedium, 14, 18),
+  productPrice: makeTextStyle(FontFamily.dmSansMedium, 16, 18),
   deliveredText: makeTextStyle(FontFamily.dmSansBold, 12, 14),
+  productTitle: makeTextStyle(FontFamily.dmSansRegular, 16, 18),
 };
 
 export default Typography;

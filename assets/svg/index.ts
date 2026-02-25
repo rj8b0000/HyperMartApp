@@ -18,6 +18,9 @@ import Furniture from './Furniture.svg';
 import Product1 from './Product1.svg';
 import Product2 from './Product2.svg';
 import Product3 from './Product3.svg';
+import Star from './Star.svg';
+import Wish from './Wish.svg';
+import Wished from './Wished.svg';
 export const Icons = {
   Home,
   Product,
@@ -39,4 +42,7 @@ export const Icons = {
   Product1,
   Product2,
   Product3,
+  Star,
+  Wish,
+  Wished,
 };
