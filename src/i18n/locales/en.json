@@ -1,0 +1,23 @@
+{
+  "city": "Bengaluru",
+  "landmark": "BTM Layout, 500628",
+  "searchPlaceholder": "Search Anything...",
+  "categories": "Categories",
+  "previousOrders": "Previous Order",
+  "delivered": "Delivered",
+  "day": "On Wed",
+  "date": "20 Jan 2023",
+  "more": "More",
+  "fineTotal": "Final Total",
+  "orderAgain": "Order Again",
+  "orderId": "Order ID",
+  "orderAgainAndGetDiscount": "Order Again & Get Flat 20% OFF",
+  "popularDeals": "Popular Deals",
+  "addToCart": "Add to Cart",
+  "topBrands": "Top Brands",
+  "exclusiveBeautyDeals": "Exclusive Beauty Deals",
+  "groceries": "Groceries",
+  "appliances": "Appliances",
+  "fashion": "Fashion",
+  "furniture": "Furniture"
+}

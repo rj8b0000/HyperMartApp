@@ -22,6 +22,11 @@ const makeTextStyle = (
 export const Typography = {
   headingBold: makeTextStyle(FontFamily.dmSansBold, 16, 20),
   dmRegular: makeTextStyle(FontFamily.dmSansRegular, 14, 16),
+  dmSmall: makeTextStyle(FontFamily.dmSansRegular, 12, 14),
+  offerTxt: makeTextStyle(FontFamily.dmSansBold, 10, 12),
+  categoryHeader: makeTextStyle(FontFamily.dmSansBold, 16, 20),
+  moreProducts: makeTextStyle(FontFamily.dmSansMedium, 14, 18),
+  deliveredText: makeTextStyle(FontFamily.dmSansBold, 12, 14),
 };
 
 export default Typography;

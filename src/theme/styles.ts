@@ -9,7 +9,9 @@ export const GlobalStyles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Colors.white,
-    paddingHorizontal: Spacing.lg,
+  },
+  paddingInContainer: {
+    paddingHorizontal: Spacing.xl,
     paddingTop: Spacing.sm,
   },
 });

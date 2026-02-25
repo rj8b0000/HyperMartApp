@@ -7,5 +7,9 @@ export const Colors = {
   blue: '#4B9DCB',
   magenta: '#AF558B',
   purple: '#A187D9',
+  gray: '#7D8FAB',
+  searchInputGray: '#EFF1F3',
+  lightGray: '#d8d8d8',
+  productOrderGray: '#F7F7F7',
 };
 export default Colors;

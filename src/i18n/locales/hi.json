@@ -1,0 +1,23 @@
+{
+  "city": "बेंगलुरु",
+  "landmark": "बीटीएम लेआउट, 500628",
+  "searchPlaceholder": "कुछ भी खोजें...",
+  "categories": "श्रेणियाँ",
+  "previousOrders": "पिछले ऑर्डर",
+  "delivered": "डिलीवर किया गया",
+  "day": "बुध को",
+  "date": "20 जन 2023",
+  "more": "और",
+  "fineTotal": "कुल राशि",
+  "orderAgain": "फिर से ऑर्डर करें",
+  "orderId": "ऑर्डर आईडी",
+  "orderAgainAndGetDiscount": "दोबारा ऑर्डर करें और 20% की छूट पाएं",
+  "popularDeals": "लोकप्रिय ऑफ़र",
+  "addToCart": "कार्ट में जोड़ें",
+  "topBrands": "शीर्ष ब्रांड",
+  "exclusiveBeautyDeals": "विशेष ब्यूटी ऑफ़र",
+  "groceries": "किराना",
+  "appliances": "उपकरण",
+  "fashion": "फैशन",
+  "furniture": "फर्नीचर"
+}

@@ -14,7 +14,7 @@ const Header = () => {
       }}
     >
       <View style={{ width: '30%' }}>
-        <Icons.Logo width={100} height={30} />
+        <Icons.Logo width={110} height={30} />
       </View>
       <View
         style={{
