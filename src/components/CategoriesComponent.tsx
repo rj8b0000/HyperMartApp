@@ -9,9 +9,6 @@ import SectionHeader from './SectionHeader';
 
 const CategoriesComponent = () => {
   const { t } = useTranslation();
-  useEffect(() => {
-    console.log(categories);
-  }, []);
   const categories = getCategories(t);
   const bgColors = [Colors.primary, Colors.blue, Colors.magenta, Colors.purple];
   const renderCategories = (item: any) => {

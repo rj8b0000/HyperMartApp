@@ -1,7 +1,8 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import React from 'react';
 import { Icons } from '../../assets/svg';
 import { Typography } from '../theme';
+import i18n from '../i18n';
 
 const Header = () => {
   return (
@@ -23,17 +24,18 @@ const Header = () => {
           justifyContent: 'space-between',
         }}
       >
-        <View
+        <TouchableOpacity
           style={{
             flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'center',
             gap: 4,
           }}
+          onPress={() => i18n.changeLanguage('hi')}
         >
           <Text style={Typography.dmRegular}>Eng</Text>
           <Icons.Down width={16} height={16} />
-        </View>
+        </TouchableOpacity>
         <View>
           <Icons.Notification width={50} height={50} />
         </View>

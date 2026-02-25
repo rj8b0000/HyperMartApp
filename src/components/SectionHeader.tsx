@@ -10,7 +10,13 @@ type SectionHeaderProps = {
 const SectionHeader = ({ title, showIcon }: SectionHeaderProps) => {
   return (
     <View style={styles.container}>
-      <Text style={Typography.categoryHeader}>{title}</Text>
+      <Text
+        style={Typography.categoryHeader}
+        numberOfLines={1}
+        ellipsizeMode="tail"
+      >
+        {title}
+      </Text>
       {showIcon ? <Icons.ArrowRight2 height={24} width={24} /> : null}
     </View>
   );

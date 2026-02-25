@@ -76,7 +76,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     borderWidth: 0.5,
     borderRadius: Radius.lg,
-    borderColor: Colors.gray,
   },
   topSection: {
     height: '65%',

@@ -2,7 +2,7 @@ export const getProducts = (t: (key: string) => string) => [
   {
     id: 1,
     image: require('../../assets/products/Product1.png'),
-    productName: 'Strawberries',
+    productName: t('strawberry'),
     price: '₹ 10',
     ratings: '4.8',
     whised: false,
@@ -10,7 +10,7 @@ export const getProducts = (t: (key: string) => string) => [
   {
     id: 2,
     image: require('../../assets/products/Product2.png'),
-    productName: 'Fried Chips',
+    productName: t('friedChips'),
     price: '₹ 12',
     ratings: '4.8',
     whised: false,
@@ -18,7 +18,7 @@ export const getProducts = (t: (key: string) => string) => [
   {
     id: 3,
     image: require('../../assets/products/Product3.png'),
-    productName: 'Modern Chair',
+    productName: t('mordernChair'),
     price: '₹ 3599',
     ratings: '4.8',
     wished: false,
@@ -26,7 +26,7 @@ export const getProducts = (t: (key: string) => string) => [
   {
     id: 4,
     image: require('../../assets/products/Product4.png'),
-    productName: 'LG washing machine',
+    productName: t('washingMachine'),
     price: '₹ 45,999',
     ratings: '4.8',
     wished: false,
