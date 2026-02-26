@@ -1,7 +1,13 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  Pressable,
+} from 'react-native';
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { MainTabParamList } from './types';
+import { MainTabParamList, RootStackParamList } from './types';
 import HomeScreen from '../screens/HomeScreen';
 import ProductScreen from '../screens/ProductScreen';
 import ProfileScreen from '../screens/ProfileScreen';
@@ -12,9 +18,11 @@ import { Spacing } from '../theme';
 import { Colors } from '../theme';
 import responsive from '../styles/responsive';
 import { Icons } from '../../assets/svg';
+import { RouteProp, useNavigation } from '@react-navigation/native';
 const BottomNavigator = () => {
   const Tab = createBottomTabNavigator<MainTabParamList>();
   const insets = useSafeAreaInsets();
+  const navigation = useNavigation();
   return (
     <Tab.Navigator
       initialRouteName="Home"
@@ -34,6 +42,12 @@ const BottomNavigator = () => {
           }
         },
         tabBarStyle: [styles.tabBarStyle, { paddingBottom: insets.bottom }],
+        tabBarButton: props => (
+          <Pressable
+            {...(props as any)}
+            android_ripple={{ color: 'transparent' }}
+          />
+        ),
       })}
     >
       <Tab.Screen
@@ -47,19 +61,18 @@ const BottomNavigator = () => {
         options={{ tabBarShowLabel: false, headerShown: false }}
       />
       <Tab.Screen
-        name="Cart"
+        name="CartScreen"
         component={CartScreen}
         options={{
           tabBarShowLabel: false,
           tabBarIcon: ({ focused }) => (
-            <TouchableOpacity>
-              <View style={styles.cartOuter}>
-                <View style={styles.cartInner}>
-                  <Icons.Cart width={32} height={32} />
-                </View>
+            <View style={styles.cartOuter}>
+              <View style={styles.cartInner}>
+                <Icons.Cart width={32} height={32} />
               </View>
-            </TouchableOpacity>
+            </View>
           ),
+          headerShown: false,
         }}
       />
       <Tab.Screen

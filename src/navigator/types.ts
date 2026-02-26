@@ -3,7 +3,7 @@ import { NavigatorScreenParams } from '@react-navigation/native';
 export type MainTabParamList = {
   Home: undefined;
   Favourite: undefined;
-  Cart: undefined;
+  CartScreen: undefined;
   Profile: undefined;
   Products: undefined;
 };

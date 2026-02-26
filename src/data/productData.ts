@@ -1,33 +1,42 @@
-export const getProducts = (t: (key: string) => string) => [
+export interface Product {
+  id: number;
+  image: string;
+  productName: string;
+  price: number;
+  ratings: string;
+  wished: boolean;
+}
+
+export const productData: Product[] = [
   {
     id: 1,
     image: require('../../assets/products/Product1.png'),
-    productName: t('strawberry'),
-    price: '₹ 10',
+    productName: 'Strawberry',
+    price: 10,
     ratings: '4.8',
-    whised: false,
+    wished: false,
   },
   {
     id: 2,
     image: require('../../assets/products/Product2.png'),
-    productName: t('friedChips'),
-    price: '₹ 12',
+    productName: 'Fried Chips',
+    price: 12,
     ratings: '4.8',
-    whised: false,
+    wished: false,
   },
   {
     id: 3,
     image: require('../../assets/products/Product3.png'),
-    productName: t('mordernChair'),
-    price: '₹ 3599',
+    productName: 'Mordern Chair',
+    price: 3599,
     ratings: '4.8',
     wished: false,
   },
   {
     id: 4,
     image: require('../../assets/products/Product4.png'),
-    productName: t('washingMachine'),
-    price: '₹ 45,999',
+    productName: 'Washing Machine',
+    price: 45999,
     ratings: '4.8',
     wished: false,
   },

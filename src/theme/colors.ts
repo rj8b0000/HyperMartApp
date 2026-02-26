@@ -11,5 +11,6 @@ export const Colors = {
   searchInputGray: '#EFF1F3',
   lightGray: '#d8d8d8',
   productOrderGray: '#F7F7F7',
+  cartGrey: '#EAEAEA',
 };
 export default Colors;

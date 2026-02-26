@@ -21,6 +21,8 @@ import Product3 from './Product3.svg';
 import Star from './Star.svg';
 import Wish from './Wish.svg';
 import Wished from './Wished.svg';
+import Plus from './Plus.svg';
+import Minus from './Minus.svg';
 export const Icons = {
   Home,
   Product,
@@ -45,4 +47,6 @@ export const Icons = {
   Star,
   Wish,
   Wished,
+  Plus,
+  Minus,
 };

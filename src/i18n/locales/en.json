@@ -23,5 +23,8 @@
   "strawberry": "Strawberries",
   "friedChips": "Fried Chips",
   "mordernChair": "Mordern Chair",
-  "washingMachine": "LG Washing Machine"
+  "washingMachine": "LG Washing Machine",
+  "cart": "Cart",
+  "selectLanguage": "Select Language",
+  "lang": "eng"
 }
