@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { I18nManager, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { Typography } from '../theme';
 import { Icons } from '../../assets/svg';
@@ -17,7 +17,13 @@ const UserLocation = ({ currState, landmark }: UserLocationProps) => {
           <Text style={Typography.dmRegular}>{landmark}</Text>
         </View>
       </View>
-      <Icons.ArrowRight width={20} height={20} />
+      <Icons.ArrowRight
+        width={20}
+        height={20}
+        style={{
+          transform: [{ scaleX: I18nManager.isRTL ? -1 : 1 }],
+        }}
+      />
     </View>
   );
 };

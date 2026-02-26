@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { I18nManager, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { Typography } from '../theme';
 import { Icons } from '../../assets/svg';
@@ -17,7 +17,15 @@ const SectionHeader = ({ title, showIcon }: SectionHeaderProps) => {
       >
         {title}
       </Text>
-      {showIcon ? <Icons.ArrowRight2 height={24} width={24} /> : null}
+      {showIcon ? (
+        <Icons.ArrowRight2
+          height={24}
+          width={24}
+          style={{
+            transform: [{ scaleX: I18nManager.isRTL ? -1 : 1 }],
+          }}
+        />
+      ) : null}
     </View>
   );
 };
