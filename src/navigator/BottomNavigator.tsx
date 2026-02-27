@@ -41,7 +41,10 @@ const BottomNavigator = () => {
             return <Icons.Favourite width={24} height={24} />;
           }
         },
-        tabBarStyle: [styles.tabBarStyle, { paddingBottom: insets.bottom }],
+        tabBarStyle: [
+          styles.tabBarStyle,
+          { paddingBottom: insets.bottom, height: 60 + insets.bottom },
+        ],
         tabBarButton: props => (
           <Pressable
             {...(props as any)}
